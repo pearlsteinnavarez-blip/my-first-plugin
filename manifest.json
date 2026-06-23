@@ -1,9 +1,9 @@
 {
 	"id": "my-first-plugin",
 	"name": "My First Plugin",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.0.0",
-	"description": "我的第一个 Obsidian 测试插件（表格换行 + 滚动记忆）",
+	"description": "我的第一个 Obsidian 测试插件（表格换行 + 滚动记忆 + 复制路径）",
 	"author": "Obsidian",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
