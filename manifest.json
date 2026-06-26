@@ -1,11 +1,11 @@
 {
 	"id": "my-first-plugin",
 	"name": "My First Plugin",
-	"version": "1.0.3",
+	"version": "1.2.2",
 	"minAppVersion": "1.0.0",
-	"description": "我的第一个 Obsidian 测试插件（表格换行 + 滚动记忆 + 复制路径）",
+	"description": "我的第一个 Obsidian 测试插件（表格换行 + 滚动记忆 + 复制路径 + 表格复制为图 + 插件白名单自动更新 + 浮动T）",
 	"author": "Obsidian",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"isDesktopOnly": true
 }

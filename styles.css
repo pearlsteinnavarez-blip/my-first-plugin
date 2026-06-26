@@ -1,8 +1,104 @@
-/*
+.mfp-float-toolbar-host {
+	position: relative;
+	overflow: visible;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.mfp-float-toolbar {
+	position: absolute;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+	pointer-events: none;
+	max-width: calc(100% - 16px);
+}
 
-If your plugin does not need CSS, delete this file.
+.mfp-float-toolbar.is-hidden {
+	display: none;
+}
 
-*/
+.mfp-float-toolbar .mfp-t-handle,
+.mfp-float-toolbar .mfp-popover {
+	pointer-events: auto;
+}
+
+.mfp-t-handle {
+	flex: 0 0 auto;
+	width: 28px;
+	height: 28px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 6px;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	cursor: pointer;
+	box-shadow: var(--shadow-s);
+}
+
+.mfp-t-handle:hover,
+.mfp-t-handle.is-active {
+	border-color: var(--interactive-accent);
+	color: var(--interactive-accent);
+}
+
+.mfp-popover {
+	display: none;
+	width: 220px;
+	max-width: 100%;
+	padding: 10px 10px 8px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-primary);
+	box-shadow: var(--shadow-l);
+}
+
+.mfp-popover.is-open {
+	display: block;
+}
+
+.mfp-popover-title {
+	margin-bottom: 8px;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--text-muted);
+}
+
+.mfp-action-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 6px;
+}
+
+.mfp-action-btn {
+	width: 34px;
+	height: 34px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.mfp-action-btn:hover {
+	border-color: var(--interactive-accent);
+	color: var(--interactive-accent);
+	background: var(--background-modifier-hover);
+}
+
+.mfp-action-italic {
+	font-style: italic;
+}
+
+.mfp-action-strike {
+	text-decoration: line-through;
+}
+
+/* 底部空间不足时，面板改到 T 上方展开 */
+.mfp-float-toolbar.mfp-popover-flip-up {
+	flex-direction: column-reverse;
+}
